@@ -8,7 +8,11 @@
 				"kind": "build",
 				"isDefault": true
 			},
-			"problemMatcher": [],
+			"isBackground": true,
+			// "presentation": {
+			// 	"reveal": "never",
+			// },
+			"problemMatcher": ["$ts-webpack-watch"],
 			"label": "npm: watch",
 			"detail": "webpack -w"
 		}

@@ -1,7 +1,7 @@
 {
-  "name": "webusb-web-extension",
-  "displayName": "WebUSB Web Extension",
-  "description": "VS Code Web Extension demonstrating WebUSB access",
+  "name": "webserial-web-extension",
+  "displayName": "WebSerial Web Extension",
+  "description": "VS Code Web Extension demonstrating WebSerial access",
   "version": "1.0.0",
   "preview": true,
   "private": true,
@@ -9,7 +9,7 @@
   "author": "Rob Moran <rob@thegecko.org>",
   "license": "MIT",
   "browser": "dist/browser/extension.js",
-  "repository": "https://github.com/thegecko/webusb-web-extension",
+  "repository": "https://github.com/Weissnix4711/webserial-web-extension",
   "qna": false,
   "engines": {
     "vscode": "^1.50.0"
@@ -23,7 +23,7 @@
     "build": "webpack --mode production",
     "watch": "webpack -w",
     "package": "vsce package --yarn",
-    "browser": "vscode-test-web --sourcesPath=$HOME/Projects/vscode --extensionDevelopmentPath=. ."
+    "browser": "vscode-test-web --extensionDevelopmentPath=. ."
   },
   "dependencies": {
     "@vscode/webview-ui-toolkit": "^0.9.1"
@@ -32,7 +32,7 @@
     "@types/node": "^12.20.0",
     "@types/vscode": "^1.50.0",
     "@types/vscode-webview": "^1.57.0",
-    "@types/w3c-web-usb": "^1.0.6",
+    "@types/w3c-web-serial": "^1.0.3",
     "@vscode/test-web": "^0.0.22",
     "copy-webpack-plugin": "^10.2.4",
     "ts-loader": "^9.2.6",
@@ -44,25 +44,25 @@
   "contributes": {
     "commands": [
       {
-        "command": "webusb.listDevices",
-        "title": "WebUSB: List Devices"
+        "command": "webserial.listDevices",
+        "title": "WebSerial: List Devices"
       }
     ],
     "viewsContainers": {
       "activitybar": [
         {
-          "id": "webusb",
-          "title": "WebUSB",
+          "id": "webserial",
+          "title": "WebSerial",
           "icon": "$(preview)"
         }
       ]
     },
     "views": {
-      "webusb": [
+      "webserial": [
         {
-          "id": "webusb.webview",
+          "id": "webserial.webview",
           "type": "webview",
-          "name": "WebUSB",
+          "name": "WebSerial",
           "icon": "$(preview)"
         }
       ]

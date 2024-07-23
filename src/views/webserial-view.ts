@@ -4,6 +4,6 @@ window.addEventListener('load', () => {
     const requestButton = document.getElementById('request-button')!;
     const listButton = document.getElementById('list-button')!;
 
-    requestButton.addEventListener('click', () => vscodeApi.postMessage('workbench.experimental.requestUsbDevice'));
-    listButton.addEventListener('click', () => vscodeApi.postMessage('webusb.listDevices'));
+    requestButton.addEventListener('click', () => vscodeApi.postMessage('workbench.experimental.requestSerialPort'));
+    listButton.addEventListener('click', () => vscodeApi.postMessage('webserial.listDevices'));
 });

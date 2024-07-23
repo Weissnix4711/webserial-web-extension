@@ -120,10 +120,10 @@
   resolved "https://registry.yarnpkg.com/@types/vscode/-/vscode-1.66.0.tgz#e90e1308ad103f2bd31b72c17b8031b4cec0713d"
   integrity sha512-ZfJck4M7nrGasfs4A4YbUoxis3Vu24cETw3DERsNYtDZmYSYtk6ljKexKFKhImO/ZmY6ZMsmegu2FPkXoUFImA==
 
-"@types/w3c-web-usb@^1.0.6":
-  version "1.0.6"
-  resolved "https://registry.yarnpkg.com/@types/w3c-web-usb/-/w3c-web-usb-1.0.6.tgz#5d8560d0d9f585ffc80865bc773db7bc975b680c"
-  integrity sha512-cSjhgrr8g4KbPnnijAr/KJDNKa/bBa+ixYkywFRvrhvi9n1WEl7yYbtRyzE6jqNQiSxxJxoAW3STaOQwJHndaw==
+"@types/w3c-web-serial@^1.0.3":
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/@types/w3c-web-serial/-/w3c-web-serial-1.0.3.tgz#9fd5e8542f74e464bb1715b384b5c0dcbf2fb2c3"
+  integrity sha512-R4J/OjqKAUFQoXVIkaUTfzb/sl6hLh/ZhDTfowJTRMa7LhgEmI/jXV4zsL1u8HpNa853BxwNmDIr0pauizzwSQ==
 
 "@types/yauzl@^2.9.1":
   version "2.9.2"

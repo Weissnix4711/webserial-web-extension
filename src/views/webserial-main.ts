@@ -1,15 +1,15 @@
 import * as vscode from 'vscode';
 
-export class WebUsbWebview implements vscode.WebviewViewProvider {
+export class WebSerialWebview implements vscode.WebviewViewProvider {
 
-    private static viewType = 'webusb.webview';
+    private static viewType = 'webserial.webview';
 
     public constructor(protected extensionUri: vscode.Uri) {
     }
 
     public async activate(context: vscode.ExtensionContext): Promise<void> {
         context.subscriptions.push(
-            vscode.window.registerWebviewViewProvider(WebUsbWebview.viewType, this)
+            vscode.window.registerWebviewViewProvider(WebSerialWebview.viewType, this)
         );
     }
 
@@ -25,7 +25,7 @@ export class WebUsbWebview implements vscode.WebviewViewProvider {
                 vscode.commands.executeCommand(command);
             }
         });
-        webviewView.title = 'WebUSB';
+        webviewView.title = 'WebSerial';
         webviewView.show();
     }
 
@@ -54,10 +54,10 @@ export class WebUsbWebview implements vscode.WebviewViewProvider {
                     <script type='module' src='${mainUri}'></script>
                 </head>
                 <body>
-                    <vscode-button id='request-button' title='Authorise WebUSB Device' aria-label='Authorise WebUSB Device'>
+                    <vscode-button id='request-button' title='Authorise WebSerial Device' aria-label='Authorise WebSerial Device'>
                         Authorise Device
                     </vscode-button>
-                    <vscode-button id='list-button' title='List WebUSB Devices' aria-label='List WebUSB Devices'>
+                    <vscode-button id='list-button' title='List WebSerial Devices' aria-label='List WebSerial Devices'>
                         List Devices
                     </vscode-button>
                 </body>
